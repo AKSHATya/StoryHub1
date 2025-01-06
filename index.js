@@ -20,7 +20,7 @@ const uploadMiddleware = multer({ dest: 'uploads/' });
 const salt = bcrypt.genSaltSync(10);
 const secret = 'secret_key';
 
-app.use(cors({ credentials: true, origin: 'https://story-hub-d7co.vercel.app' }));
+app.use(cors({ credentials: true, origin: 'https://story-hub1.vercel.app' }));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(path.join(path.resolve(), 'uploads')));
