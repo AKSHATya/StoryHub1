@@ -169,6 +169,9 @@ app.get('/post/:id', async (req, res) => {
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+app.listen(4000,(res,req)=>{
+  console.log('Server is running on port 4000');
+})
 
 // Export the app for Vercel
-module.exports = app;
+// module.exports = app;
